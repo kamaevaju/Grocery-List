@@ -37,7 +37,7 @@ export class GroceryList extends Component{
     render(){
         return(
         <div>  
-            <form onSubmit={this.onFormSubmit}>
+          <form onSubmit={this.onFormSubmit}>
             <div className='container'>
                 <input type="text" 
                 placeholder='What do you want to buy?'
@@ -46,17 +46,19 @@ export class GroceryList extends Component{
             </div>
 
             <div className='container'>
-            <button className='btn add' onClick={() => this.addItem(this.state.userInput)}>Add</button>
+                <button className='btn add' onClick={() => this.addItem(this.state.userInput)}>Add</button>
             </div>
+
             <ul>
                 {this.state.groceryList.map((item, index) => ( 
                     <li onClick={this.crossedWord} key={index}> <img src={icon} width="35px" alt='icon' /> {item}</li>
                 ))} 
             </ul>
+
             <div className='container'>
-            <button className='btn delete' onClick={() => this.deleteItem()}>Delete</button>
+                <button className='btn delete' onClick={() => this.deleteItem()}>Delete</button>
             </div>
-            </form>
+          </form>
         </div> 
         )
     }

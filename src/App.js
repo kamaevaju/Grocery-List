@@ -7,15 +7,18 @@ function App() {
   return (
     <div className='app'>
       <div className='container'>
-      <img src={ image } width="200px" alt='shop' />
+        <img src={ image } width="200px" alt='shop' />
       </div>
+
       <div className='container'>
-      <h1>Grocery List</h1>
+        <h1>Grocery List</h1>
       </div>
-      <GroceryList />
+
+        <GroceryList />
       <div className='container'>
-      <img src={man} width='200px' alt='man' />
-      </div>      
+        <img src={man} width='200px' alt='man' />
+      </div>  
+
     </div>
   );
 }
